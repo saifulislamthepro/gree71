@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images//Green 71 Foundation Logo.png" type="image/x-icon">
+  <title>Our Projects | Green 71 Foundation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green: #008000;
+      --black: #1a1a1a;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+    }
+
+    header.hero {
+      background: url('./images/Grid-banner\ copy.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      text-align: center;
+      height: 70vh;
+    }
+
+    header.hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header.hero h1 {
+      position: relative;
+      color: var(--white);
+      font-size: 3rem;
+      z-index: 1;
+    }
+
+    .story-section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .story-section h2 {
+      font-size: 2rem;
+      color: var(--green);
+      margin-bottom: 20px;
+    }
+
+    .story-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .projects-section {
+      padding: 60px 20px;
+      background-color: #f4f4f4;
+    }
+
+    .projects-section h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      color: var(--green);
+      margin-bottom: 10px;
+    }
+
+    .projects-section p {
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: var(--white);
+      text-align: left;
+      height: fit-content;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+      transform: scale(1.05);
+    }
+    .project-card p{
+      color: yellow;
+      text-align: left;
+    }
+
+    .project-overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 128, 0, 0.85);
+      color: var(--white);
+      width: 100%;
+      padding: 10px;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      text-align: left;
+    }
+
+    .project-card:hover .project-overlay {
+      transform: translateY(0);
+    }
+
+    .project-overlay h3 {
+      margin: 0 0 10px;
+      font-size: 1.4rem;
+    }
+
+    .project-overlay p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .project-overlay a{
+      color: rgb(124, 196, 255);
+    }
+
+    .read-more {
+      color: var(--white);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header.hero h1 {
+        font-size: 2rem;
+      }
+
+      .story-section h2 {
+        font-size: 1.6rem;
+      }
+
+      .story-section p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar">
+      <a href="/">
+        <img src="./images/Green 71 Foundation Logo.png" alt="Logo" width="50px">
+        <h1 class="logo">Green 71 Foundation</h1>
+      </a>
+      <ul class="nav-links" id="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+      <span class="menu" id="menuBtn">&#9776;</span>
+      <span class="cross" id="crossBtn">&#215;</span>
+    </nav>
+
+  <!-- Hero Banner -->
+  <header class="hero projects-hero">
+    <h1>Our Projects</h1>
+  </header>
+
+  <!-- Short Story Section -->
+  <section class="story-section">
+    <h2>Why We Do What We Do</h2>
+    <p>
+      In the remote village of Char Rajibpur, Kurigram, the river gives life — and sometimes takes it away. For years, families drank from the same water that flooded their homes, carrying disease and despair. Children missed school due to illness. Mothers walked miles to find clean water, often returning with less than they needed.
+    </p>
+    <p>
+      In 2024, Green 71 Foundation launched the <strong>Clean Water Initiative</strong>, installing deep tube wells and community filtration systems across the region. The change was immediate. Smiles returned. School attendance rose. For the first time, families could drink without fear.
+    </p>
+    <p>
+      Rina Begum, a mother of three, shared: <em>“I used to boil water every day. Now, I just turn the tap. My children are healthy. We have hope.”</em>
+    </p>
+    <p>
+      This project isn’t just about water — it’s about dignity, health, and the right to thrive. And it’s only the beginning.
+    </p>
+  </section>
+
+  <!-- Projects Gallery -->
+  <section class="projects-section">
+    <h2>Explore Our Work</h2>
+    <p>Each project is a step toward hope, dignity, and change.</p>
+
+    <div class="projects-grid" id="projects">
+
+      <div class="project-card">
+        <img src="images/Create a professiona.png" alt="Education for All">
+        <div class="project-overlay">
+          <h3>Education for All</h3>
+          <p>School kits and mentorship for rural children.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/Create an image of a.png" alt="Green Villages">
+        <div class="project-overlay">
+          <h3>Green Villages</h3>
+          <p>Tree planting and climate awareness in flood-prone areas.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/create an image for .png" alt="Clean Water Initiative">
+        <div class="project-overlay">
+          <h3>Clean Water Initiative</h3>
+          <p>Safe drinking water for 500+ families in Kurigram.</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Green 71 Foundation | All rights reserved</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

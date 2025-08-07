@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Green71 Foundation</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="Donate-hero">
+    <nav class="navbar">
+      <a href="/">
+        <img src="./images/Green 71 Foundation Logo.png" alt="Logo" width="50px">
+        <h1 class="logo">Green 71 Foundation</h1>
+      </a>
+      <ul class="nav-links" id="nav-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/projects.html">Projects</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
+      </ul>
+      <span class="menu" id="menuBtn">&#9776;</span>
+      <span class="cross" id="crossBtn">&#215;</span>
+    </nav>
+    <div class="donate-hero-content">
+      <h2>Support Our Mission</h2>
+      <p>Your donation helps us bring hope, dignity, and opportunity to those who need it most.</p>
+      <div class="cta-buttons">
+        <button onclick="document.getElementById('donation-methods').scrollIntoView({behavior:'smooth'})">See How to Donate</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="body">
+    <div class="section mission">
+      <div class="text-column">
+        <h2>Why Donate?</h2>
+        <p>
+          Every contribution big or small, helps us provide education, healthcare, clean water, and more to underserved communities across Bangladesh. Your generosity fuels real change.
+        </p>
+      </div>
+      <div class="image-column">
+        <img src="./images/Donate 1.png" alt="Donation impact image">
+      </div>
+    </div>
+
+    <div class="section" id="donation-methods">
+      <div class="image-column">
+        <img src="./images/illustration of Bank.png" alt="Mobile payment illustration">
+      </div>
+      <div class="text-column">
+        <h2>Donation Methods</h2>
+        <p><strong>🏦 Bank Transfer</strong><br>
+          Bank Name: Example Bank<br>
+          Account Name: Green71 Foundation<br>
+          Account Number: 1234567890<br>
+          Branch: Dhaka Main<br>
+          SWIFT Code: EXAMPBDH
+        </p>
+        <p><strong>📱 bKash</strong><br>
+          Number: 01XXXXXXXXX<br>
+          Type: Personal<br>
+          Please email your transaction screenshot to <a href="mailto:donate@green71.org">donate@green71.org</a>
+        </p>
+        <p><strong>📲 Nagad</strong><br>
+          Number: 01XXXXXXXXX<br>
+          Same instructions as bKash
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="cta">
+    <h3>Want to Help More?</h3>
+    <p>Become a monthly donor or volunteer with us. Every action counts.</p>
+    <a href="/contact.html">
+      <button>Contact Us</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Green 71 Foundation | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
